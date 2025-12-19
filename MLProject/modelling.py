@@ -4,7 +4,8 @@ from sklearn.linear_model import LogisticRegression
 import mlflow
 import mlflow.sklearn
 
-def main()
+def main():
+    mlflow.set_tracking_uri("file:./mlruns")
     mlflow.set_experiment("CI-Retraining")
 
     df = pd.read_csv("bank_preprocessed.csv")
