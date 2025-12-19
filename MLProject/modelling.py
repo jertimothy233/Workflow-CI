@@ -22,6 +22,7 @@ def main():
     with mlflow.start_run():
         model.fit(X_train, y_train)
 
-if__name__== "__main__":
-  main()
+if __name__ == "__main__":
+    main()
+
       
